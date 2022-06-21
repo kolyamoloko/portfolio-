@@ -10,27 +10,27 @@ const data = [
   {
     avatar: AVTR1,
     name: 'Санек',
-    review: 'К'
+    review: 'Квфывфывфывфыв'
   },
   {
     avatar: AVTR2,
     name: 'Санек',
-    review: 'К'
+    review: 'Кфывфывфывфывф'
   },  
   {
     avatar: AVTR3,
     name: 'Санек',
-    review: 'К'
+    review: 'Квфывфывфыв'
   },  
   {
     avatar: AVTR4,
     name: 'Санек',
-    review: 'К'
+    review: 'Квфывфывфывф'
   },
   {
     avatar: AVTR5,
     name: 'Nastya',
-    review: 'Nastya'
+    review: 'Lorem'
   }
 ]
 
@@ -46,14 +46,16 @@ export const Testimonial = () => {
           data.map(({avatar, name, review}) => {
             return (
               <article className="testimonial">
-              <div className="client__avatar">
-                <img src={avatar} alt="avatar" />
-                <h5 className='client__name'>{name}</h5>
-                <small className='client__review'>
-                  {review}
-                </small>
-              </div>
-            </article>
+                <div className="client__avatar">
+                  <img src={avatar} alt="avatar" />
+                  <h5 className='client__name'>
+                    {name}
+                  </h5>
+                  <small className='client__review'>
+                    {review}
+                  </small>
+                </div>
+              </article>
             )
           })
         }
